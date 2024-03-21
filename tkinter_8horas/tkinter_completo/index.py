@@ -277,4 +277,4 @@ class Application(funcs):  # ESTOU INSERINDO A 'funcs' PARA CARREGAR AS FUNÇÃO
 
 # chamando a função para mostrar a janela, encerrando assim o loop. NÃO É A MESMA COISA QUE MAINLOOP().
 Application()
-# Tkinter - O Guia Definitivo - Curso completo  parado em 1:43
+
