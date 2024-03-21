@@ -1,9 +1,8 @@
-# DO TKINTER IMPORTE TUDO;  ESSE É  PRIMEIRO PASSO*****************************
 from tkinter import *
 from tkinter import ttk  # IPORTANTANDO A BIBLIOTECA TTK; VAI DAR SUPORTE AS JANELAS
 import sqlite3  # IMPORTANDO FUNÇÕES DO BANCO DE DADOS
 
-# SEGUNDO PASSO ***********************************************
+
 # ABRINDO A JANELA, LEMBRANDO QUE ELA ESTA FORA DAS APLICATIONS(), POR ISSO CRIO UMA INSTANCIA DENTRO DA APLICATION.
 root = Tk()
 
@@ -135,7 +134,6 @@ class Application(funcs):  # ESTOU INSERINDO A 'funcs' PARA CARREGAR AS FUNÇÃO
         # tamanho minimo para diminuir
         self.root.minsize(width=500, height=400)  # COMPRIMENTO POR ALTURA
 
-# QUARTO PASSO - CRIANDO FRAMES, OU SEJA JANELAS DENTRO DA JANELA PRINCIPAL QUE  SEPARA OS ITENS DA NOSSA TELA****************************
     # bd é largura da borda, bg é cor da borda,  dai cor da borda e largura da cor,
     def frames_de_tela(self):
         self.frame_1 = Frame(self.root, bd=4, bg='#dfe3ee',
@@ -151,7 +149,7 @@ class Application(funcs):  # ESTOU INSERINDO A 'funcs' PARA CARREGAR AS FUNÇÃO
         self.frame_2.place(relx=0.02, rely=0.5, relwidth=0.96,
                            relheight=0.46)  # 0.50 % distancia EM RELAÇÃO A BORDAS ROOT(TELA PRINCIPAL) SUPERIR
 
-    # QUARTO PASSO_2 OU SEJA - ITENS QUE SERÃO CRIADOS DENTRO DA FRAME1.*****************************
+    
     def widgets_frame1(self):
         # Criação do botão limpar
         # Vamas definir como vai ficar o botão e a fonte dele
